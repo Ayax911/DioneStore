@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Dione Store</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li> 
+                        <a href="index.html" class="boton-menu boton-volver">
+                            <i class="bi bi-arrow-return-left"></i>Seguir comprando
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="carrito.html" class="boton-menu boton-carrito active">
+                            <i class="bi bi-cart4"></i>Carrito
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2025 Julian Ojeda Aviles</p>
+            </footer>
+        </aside>
+        
+        <main>
+            <h2 class="titulo-principal">Carrito de compras</h2>
+            <div class="contenedor-carrito">
+                
+                <div class="carrito-productos">
+                    
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-imagen" src="./img/camisetas/shirt-1.jpeg" alt="Camiseta 01">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Camiseta 01</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$20.000</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$20.000</p>
+                        </div>
+                        <button class="carrito-producto-eliminar">
+                            <i class="bi bi-trash3"></i>
+                        </button>
+                    </div>
+
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-imagen" src="./img/camisetas/shirt-2.jpeg" alt="Camiseta 02">
+                        <div class="carrito-producto-titulo">
+                            <small>Título</small>
+                            <h3>Camiseta 02</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>3</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$20.000</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$60.000</p>
+                        </div>
+                        <button class="carrito-producto-eliminar">
+                            <i class="bi bi-trash3"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="carrito-acciones">
+                    <div class="carrito-acciones-izquierda">
+                        <button class="carrito-acciones-vaciar">Vaciar Carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$80.000</p>
+                        </div>
+                        <button class="carrito-acciones-comprar">Comprar Ahora</button>
+                    </div>
+                </div>
+
+            </div> 
+        </main>
+    </div>  
+</body>
+</html>

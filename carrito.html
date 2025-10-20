@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Carrito</title>
 </head>
 <body>
@@ -27,7 +30,7 @@
                         </a>
                     </li>
                 </ul>
-                </ul>
+                
             </nav>
             <footer>
                 <p class="texto-footer">© 2025 Julian Ojeda Aviles</p>
@@ -39,57 +42,11 @@
             <div class="contenedor-carrito">
                  <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
 
-                <div class="carrito-productos disabled">
-                    
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" src="./img/camisetas/shirt-1.jpeg" alt="Camiseta 01">
-                        <div class="carrito-producto-titulo">
-                            <small>Título</small>
-                            <h3>Camiseta 01</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$20.000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$20.000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
-
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" src="./img/camisetas/shirt-2.jpeg" alt="Camiseta 02">
-                        <div class="carrito-producto-titulo">
-                            <small>Título</small>
-                            <h3>Camiseta 02</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>3</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$20.000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$60.000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
-
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!--Autocompletado por JS-->
                 </div>
 
-                <div class="carrito-acciones disabled">
+                <div id="carrito-acciones" class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
                         <button class="carrito-acciones-vaciar">Vaciar Carrito</button>
                     </div>
@@ -102,10 +59,12 @@
                     </div>
                 </div>
 
-                <p class="carrito-comprado disabled" class="carrito-vacio">¡Muchas gracias por tu compra! <i class="bi bi-emoji-laughing-fill"></i></p>
+                <p id="carrito-comprado" class="carrito-comprado disabled" >¡Muchas gracias por tu compra! <i class="bi bi-emoji-laughing-fill"></i></p>
 
             </div> 
         </main>
     </div>  
 </body>
+
+<script src="./js/carrito.js"></script>
 </html>

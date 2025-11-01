@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dione</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href=" ./img/DioneStore.png">
 
 </head>
+
 <body>
 
     <div class="wrapper">
         <aside>
-            <header>
-                <h1 class="logo">Dione Store</h1>
+            <header class="encabezado">
+                <a href="./index.html">
+                    <img src="./img/DioneStore.png" alt="Logo Dione Store" class="logo-img">
+                </a>
+                <h1 class="logo-text">Dione Store</h1>
             </header>
             <nav>
                 <ul>
-                    <li> 
-                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i>Todos los productos</button> 
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i
+                                class="bi bi-hand-index-thumb-fill"></i>Todos los productos</button>
                     </li>
                     <li>
-                         <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Camisetas</button> 
+                        <button id="camisetas" class="boton-menu boton-categoria"><i
+                                class="bi bi-hand-index"></i>Camisetas</button>
                     </li>
                     <li>
-                         <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Pantalones</button> 
+                        <button id="pantalones" class="boton-menu boton-categoria"><i
+                                class="bi bi-hand-index"></i>Pantalones</button>
                     </li>
-                    <li> 
-                        <button id="accesorios" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Accesorios</button> 
+                    <li>
+                        <button id="accesorios" class="boton-menu boton-categoria"><i
+                                class="bi bi-hand-index"></i>Accesorios</button>
                     </li>
                     <li>
                         <a class="boton-menu boton-carrito" href="./carrito.html">
@@ -36,22 +47,27 @@
                         </a>
                     </li>
                 </ul>
-                
+                <div class="auth-section">
+                    <a href="./login.html" class="auth-link"><i class="bi bi-person-circle"></i> Iniciar sesión</a>
+                    <a href="./register.html" class="auth-link"><i class="bi bi-person-plus-fill"></i> Registrarse</a>
+                </div>
+
             </nav>
             <footer>
-                <p class="texto-footer">© 2025 Julian Ojeda Aviles</p>
+                <p class="texto-footer">© 2025 Julian Aviles-Juan Velasquez</p>
             </footer>
         </aside>
-        
+
         <main>
             <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
             <div id="contenedor-productos" class="contenedor-productos">
                 <!-- Relleno con JS -->
-    
+
             </div>
         </main>
 
-    </div> 
+    </div>
 </body>
 <script src="./js/main.js"></script>
+
 </html>
